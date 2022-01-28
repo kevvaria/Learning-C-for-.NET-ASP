@@ -53,6 +53,14 @@ namespace Giraffe
             names[1] = "charlie";
             Console.WriteLine("Second name in the names array: " + names[1] + " has a lucky number " + luckyNumbers[1] + "\n\n");
 
+            // 2d arrays syntax
+            int[,] numbers =
+            {
+                { 1, 2 },
+                { 3, 4 },
+                { 5, 6 }
+            };  // numbers[0,0] will return 1, numbers[2,1] will return 6
+
             // method calls
             Console.WriteLine("- METHODS -");
             greetUser(firstName);
@@ -75,7 +83,11 @@ namespace Giraffe
         }
 
         
-        // method requirements: static/non-static, return type, method name
+        /* method requirements:
+         *      static/non-static
+         *      return type
+         *      method name
+         */
         static void greetUser(string name)
         {
             Console.WriteLine("Hi " + name);
