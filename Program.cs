@@ -48,7 +48,7 @@ namespace Giraffe
             // dealing with variables - array data type
             Console.WriteLine("\n\n- Arrays -");
             int[] luckyNumbers = { 2, 4, 67, 8, 3, 105 };
-            string[] names = new string[5];
+            string[] names = new string[2];
             names[0] = "keval";
             names[1] = "charlie";
             Console.WriteLine("Second name in the names array: " + names[1] + " has a lucky number " + luckyNumbers[1] + "\n\n");
@@ -57,12 +57,31 @@ namespace Giraffe
             Console.WriteLine("- METHODS -");
             greetUser(firstName);
             greetUser(names[1]);
+
+            // dealing with loops: for loop
+            Console.WriteLine("\n\n- LOOPS -");
+            for (int i = 0; i < names.Length; i++)
+            {
+                greetUser(names[i]);
+            }
+
+            // dealing with loops: for loop
+            int j = 0;
+            while (j < luckyNumbers.Length)
+            {
+                Console.WriteLine(luckyNumbers[j]);
+                j++;
+            }
         }
 
+        
         // method requirements: static/non-static, return type, method name
         static void greetUser(string name)
         {
             Console.WriteLine("Hi " + name);
         }
+
+
+        
     }
 }
