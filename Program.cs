@@ -45,7 +45,10 @@ namespace Giraffe
 
             // dealing with variables - array data type
             int[] luckyNumbers = { 2, 4, 67, 8, 3, 105 };
-
+            string[] names = new string[5];
+            names[0] = "keval";
+            names[1] = "charlie";
+            Console.WriteLine("Second name in the names array: " + names[1] + " has a lucky number " + luckyNumbers[1]);
         }
     }
 }
