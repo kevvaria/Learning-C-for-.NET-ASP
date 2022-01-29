@@ -80,6 +80,13 @@ namespace Giraffe
                 Console.WriteLine(luckyNumbers[j]);
                 j++;
             }
+
+            // dealing with class objects
+            Console.WriteLine("\n\n- CLASS OBJECTS -");
+            Book book = new Book("Essentialism", "Greg McKeown", 2019);     // constructor call
+            Console.WriteLine("initial title: " + book.Title);              // getter call
+            book.Title = "Essentialism: The Disciplined Pursuit of Less";   // setter call
+            Console.WriteLine("updated title: " + book.Title);              // getter confirmation
         }
 
         
@@ -92,8 +99,5 @@ namespace Giraffe
         {
             Console.WriteLine("Hi " + name);
         }
-
-
-        
     }
 }
